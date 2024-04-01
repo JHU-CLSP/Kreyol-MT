@@ -6,7 +6,7 @@
 
 ⚠️ Model download link(s) coming soon! (HF)
 
-### MT data for African and African-diaspora Creole languages (primarily from Latin America)
+## Building Machine Translation for Latin American, Caribbean, and Colonial African Creole Languages
 
 Goal: include data for each of the following languages
 
