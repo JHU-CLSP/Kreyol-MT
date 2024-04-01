@@ -1,10 +1,10 @@
 # Kreyòl-MT
 
-Paper link coming soon!
+⚠️ Paper link coming soon!
 
-Data download link(s) coming soon! (HF and LDC)
+⚠️ Data download link(s) coming soon! (HF and LDC)
 
-Model download link(s) coming soon! (HF)
+⚠️ Model download link(s) coming soon! (HF)
 
 ### MT data for African and African-diaspora Creole languages (primarily from Latin America)
 
