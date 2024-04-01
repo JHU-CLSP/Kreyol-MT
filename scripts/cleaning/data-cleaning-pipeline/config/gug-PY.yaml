@@ -1,0 +1,93 @@
+normalize_quotes: false
+
+allowed_characters:
+  - '0032' # ' '
+  - '0033-0034' # ! "
+  - '0039-0041' # ' ( )
+  - '0044-0059' # , - . / 0-9 : ;
+  - '0063' # ?
+
+  - '0161' # Inverted !
+  - '0191' # Inverted ?
+
+  - '0065-0069' # A-E
+  - '0070' # F, loan words
+  - '0071-0080' # G-P
+  - '0081' # Q, proper names
+  - '0082-0086' # R-V
+  - '0087' # W, only in proper names
+  - '0088' # X, used in loan words
+  - '0089' # Y 
+  - '0090' # Z, used in loan words
+  - '0097-0122' # a-z
+  - '0091' # [
+  - '0093' # ]
+
+  - '0771' # Combining tilde
+  - '0195' # A with tilde
+  - '0227' # a with tilde
+
+  - '7868' # E with tilde
+  - '7869' # e with tilde
+
+  - '0296' # I with tilde
+  - '0297' # i with tilde
+
+  - '0209' # N with tilde
+  - '0241' # n with tilde
+  
+  - '0213' # O with tilde
+  - '0245' # o with tilde
+
+  - '0361' # u with tilde
+
+  - '7929' # y with tilde
+
+  # Allow accented letters
+  - '0769' # combining accent
+  - '0193'
+  - '0201'
+  - '0205'
+  - '0211'
+  - '0218'
+  - '0225'
+  - '0233'
+  - '0237'
+  - '0243'
+  - '0250'
+  - '0253'
+
+  - '0700' # glotal stop
+
+  - '8211' # en dash
+  - '8212' # em dash
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '0182': '' # Remove ¶
+  '8208': '0045' # Change HYPHEN to HYPHEN-MINUS
+  '8210': '0045' # Change FIGURE DASH to HYPHEN-MINUS
+  '8722': '0045' # Change MINUS SIGN to HYPHEN-MINUS
+  '8260': '0047' # Replace fraction slash with forward slash
+  
+  '0096': '0039' # grave accent with apostrophe
+
+  '0285': '0103,0771' # g with circumflex to g with tilde
+  '0287': '0103,0771' # g with breve to g with tilde
+  '0487': '0103,0771' # g with caron to g with tilde
+  '7713': '0103,0771' # g with macron to g with tilde
+
+  '0226': '0227' # a with circumflex to a with tilde
+  '0234': '7869' # e with circumflex to e with tilde
+  '0238': '0297' # i with circumflex to i with tilde
+  '0244': '0245' # o with circumflex to o with tilde
+  '0251': '0361' # u with circumflex to u with tilde
+  '0365': '0361' # u with breve to u with tilde
+
+  '8220': '0034' # LEFT DOUBLE QUOTATION MARK to straight
+  '8221': '0034' # RIGHT DOUBLE QUOTATION MARK to straight
+
+  '8217': '0700' # Normalize glotal stop
+
+
+use_edit_distance: true

@@ -1,0 +1,39 @@
+# There are three main dialects of Papiamento, and "the Papiamentu dialect of Curaçao and Bonaire is
+# the only one of the two that makes use of the grave accent ⟨`⟩, the diaeresis or trema ⟨¨⟩ and the acute accent ⟨´⟩."
+# Source: https://en.wikipedia.org/wiki/Papiamento_orthography
+
+allowed_characters:
+  - '0032' # ' '
+  - '0033-41' # ! " # $ % & ' ( )
+  - '0044-0059' # , - . / 0-9 : ;
+  - '0063-0122' # ? @ A-Z a-z
+  - '0193' # Á
+  - '0200' # È
+  - '0201' # É
+  - '0210' # Ò
+  - '0211' # Ó
+  - '0218' # Ú
+  - '0225' # á
+  - '0227' # ã (at least in foreign words)
+  - '0228' # ä (at least in foreign words)
+  - '0232' # è
+  - '0233' # é
+  - '0237' # í
+  - '0241-0243' # ñ ò ó
+  - '0245' # õ ?
+  - '0246' # ö ?
+  - '0248' # ø (at least in foreign words)
+  - '0249' # ù
+  - '0250' # ú
+  - '0252' # ü
+  - '8211' # –
+  - '8212' # —
+  # 0236 ì ?
+  # 0235 ë ?
+  # 0224 à ?
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '0182': '' # Remove ¶
+  '8056': '0242' # replace ὸ with ò
+  '0180': '0039' # replace ´ with '

@@ -1,0 +1,24 @@
+# config file for Samoan
+
+normalize_quotes: False
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '8226': '' # Remove bullet •
+  '9702': '' # Remove White bullet ◦
+  '0182': '' # Remove ¶
+  '0042': '' # Remove *
+  '0180': '0039' # replace ´ with '
+  '8260': '0047' # Replace fraction slash with forward slash
+  '0169': '' # Remove ©
+  '9633': '' # Remove □
+  '699': '8217' # Replace modifier letter commas with right single quotation marks
+  '700': '8217' # Replace modifier letter apostrophes with right single quotation marks
+  '8216': '8217' # Replace left single quotation marks with right single quotation marks
+  '8220': '34' # Replace left double quotation mark with straight quotation marks
+  '8221': '34' # Replace right double quotation mark with straight quotation marks
+
+  # not doing this one bc I think there are too many cases where straight apostrophes are used AS quotation marks
+  # '39': '8217' # Replace apostrophes with right single quotation marks
+
+  # If we do a strict character set, we need to make sure we include capital vowels with macrons!!

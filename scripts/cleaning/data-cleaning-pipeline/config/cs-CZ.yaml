@@ -1,0 +1,15 @@
+# Config file for Czech
+
+word_initial_delimiter: "(?:(?<=[\\s\\(\\['\"-])|(?<=^))"
+word_final_delimiter: "(?:(?=[\\s\\.\\?\\)\\]'\"!,:;-])|(?=$))"
+
+# word_initial_delimiter: '\b'
+# word_final_delimiter: '\b'
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '8226': '' # Remove bullet points
+  '8209': '0045' # Change NON-BREAKING HYPHEN to HYPHEN-MINUS
+  '8210': '0045' # Change FIGURE DASH to HYPHEN-MINUS
+  '8211': '0045' # Change EN DASH to HYPHEN-MINUS
+  '8212': '0045' # Change EM DASH to HYPHEN-MINUS

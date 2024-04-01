@@ -1,0 +1,36 @@
+# Traditional Chinese
+CJK: True
+
+longest_word_length: 100
+
+allowed_quotes: 
+  - "\u0022" # ascii straight quotes
+  - "\u300A"
+  - "\u300B"
+  - "\u300E"
+  - "\u300F"
+
+replacement_quotes: "\u0022" # ascii straight quotes
+
+allowed_single_quotes: 
+  - "\u0027" # ascii straight single quote
+  - "\u3008"
+  - "\u3009"
+  - "\u300C"
+  - "\u300D"
+
+replacement_single_quotes: "\u0027"  # ascii straight single quote
+
+allowed_characters:
+  - '0032' # ' '
+  - '0033-34' # ! "
+  - '0039-41' # ' ( )
+  - '0044-0063' # , - . / 0-9 : ; < = > ?
+  - '0091' # [
+  - '0093' # ]
+  # - '65-90' # A-Z
+  # - '97-122' # a-z
+  - '8211' # –
+  - '8212' # —
+  - '12289-12309' # 、。CJK Symbols and Punctuation
+  - '19968-40959' # CJK Unified Ideographs

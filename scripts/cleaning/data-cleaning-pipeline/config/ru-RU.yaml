@@ -1,0 +1,92 @@
+# Config file for Russian
+remove_long_words: True
+normalize_quotes: False
+
+allowed_characters:
+  - '32-35' # space, exclamation mark, quotation mark, number sign
+  - '37-38' # % &
+  - '39' # APOSTROPHE (I think we should probably change this)
+  - '40-41' # ( )
+  - '44-59' # various symbols and numbers
+  - '63' # question mark
+  - '91' # [
+  - '93' # ]
+  - '95' # _
+  - '124' # |
+  - '171' # «
+  - '187' # »
+  - '1025' # CYRILLIC CAPITAL LETTER IO
+  - '1040' # CYRILLIC CAPITAL LETTER A                   
+  - '1041' # CYRILLIC CAPITAL LETTER BE                  
+  - '1042' # CYRILLIC CAPITAL LETTER VE                  
+  - '1043' # CYRILLIC CAPITAL LETTER GHE                 
+  - '1044' # CYRILLIC CAPITAL LETTER DE                  
+  - '1045' # CYRILLIC CAPITAL LETTER IE                  
+  - '1046' # CYRILLIC CAPITAL LETTER ZHE                 
+  - '1047' # CYRILLIC CAPITAL LETTER ZE                  
+  - '1048' # CYRILLIC CAPITAL LETTER I                   
+  - '1049' # CYRILLIC CAPITAL LETTER SHORT I             
+  - '1050' # CYRILLIC CAPITAL LETTER KA                  
+  - '1051' # CYRILLIC CAPITAL LETTER EL                  
+  - '1052' # CYRILLIC CAPITAL LETTER EM                  
+  - '1053' # CYRILLIC CAPITAL LETTER EN                  
+  - '1054' # CYRILLIC CAPITAL LETTER O                   
+  - '1055' # CYRILLIC CAPITAL LETTER PE                  
+  - '1056' # CYRILLIC CAPITAL LETTER ER                  
+  - '1057' # CYRILLIC CAPITAL LETTER ES                  
+  - '1058' # CYRILLIC CAPITAL LETTER TE                  
+  - '1059' # CYRILLIC CAPITAL LETTER U                   
+  - '1060' # CYRILLIC CAPITAL LETTER EF                  
+  - '1061' # CYRILLIC CAPITAL LETTER HA                  
+  - '1062' # CYRILLIC CAPITAL LETTER TSE                 
+  - '1063' # CYRILLIC CAPITAL LETTER CHE                 
+  - '1064' # CYRILLIC CAPITAL LETTER SHA                 
+  - '1065' # CYRILLIC CAPITAL LETTER SHCHA               
+  - '1066' # CYRILLIC CAPITAL LETTER HARD SIGN           
+  - '1067' # CYRILLIC CAPITAL LETTER YERU                
+  - '1068' # CYRILLIC CAPITAL LETTER SOFT SIGN           
+  - '1069' # CYRILLIC CAPITAL LETTER E                   
+  - '1070' # CYRILLIC CAPITAL LETTER YU                  
+  - '1071' # CYRILLIC CAPITAL LETTER YA                  
+  - '1072' # CYRILLIC SMALL LETTER A                     
+  - '1073' # CYRILLIC SMALL LETTER BE                    
+  - '1074' # CYRILLIC SMALL LETTER VE                    
+  - '1075' # CYRILLIC SMALL LETTER GHE                   
+  - '1076' # CYRILLIC SMALL LETTER DE                    
+  - '1077' # CYRILLIC SMALL LETTER IE                    
+  - '1078' # CYRILLIC SMALL LETTER ZHE                   
+  - '1079' # CYRILLIC SMALL LETTER ZE                    
+  - '1080' # CYRILLIC SMALL LETTER I                     
+  - '1081' # CYRILLIC SMALL LETTER SHORT I               
+  - '1082' # CYRILLIC SMALL LETTER KA                    
+  - '1083' # CYRILLIC SMALL LETTER EL                    
+  - '1084' # CYRILLIC SMALL LETTER EM                    
+  - '1085' # CYRILLIC SMALL LETTER EN                    
+  - '1086' # CYRILLIC SMALL LETTER O                     
+  - '1087' # CYRILLIC SMALL LETTER PE                    
+  - '1088' # CYRILLIC SMALL LETTER ER                    
+  - '1089' # CYRILLIC SMALL LETTER ES                    
+  - '1090' # CYRILLIC SMALL LETTER TE                    
+  - '1091' # CYRILLIC SMALL LETTER U                     
+  - '1092' # CYRILLIC SMALL LETTER EF                    
+  - '1093' # CYRILLIC SMALL LETTER HA                    
+  - '1094' # CYRILLIC SMALL LETTER TSE                   
+  - '1095' # CYRILLIC SMALL LETTER CHE                   
+  - '1096' # CYRILLIC SMALL LETTER SHA                   
+  - '1097' # CYRILLIC SMALL LETTER SHCHA                 
+  - '1098' # CYRILLIC SMALL LETTER HARD SIGN             
+  - '1099' # CYRILLIC SMALL LETTER YERU                  
+  - '1100' # CYRILLIC SMALL LETTER SOFT SIGN             
+  - '1101' # CYRILLIC SMALL LETTER E                     
+  - '1102' # CYRILLIC SMALL LETTER YU                    
+  - '1103' # CYRILLIC SMALL LETTER YA                    
+  - '1105' # CYRILLIC SMALL LETTER IO
+  - '8211' # EN DASH
+  - '8212' # EM DASH  
+
+  # It could be worthwhile to permit latin alphabet characters in the dataset, and instead 
+  # run an edit distance-type metric to prevent too much english in the tgt text.
+  # - '65-90' # capital Latin alphabet 
+  # - '97-122' # lowercase Latin alphabet
+
+# look into &# constructions

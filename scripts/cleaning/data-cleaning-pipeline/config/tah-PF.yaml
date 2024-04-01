@@ -1,0 +1,140 @@
+# config file for Tahitian
+normalize_quotes: False
+
+# remove_regex_patterns:
+#   - '[^aeiou\W]’' # this actually recognizes a lot of french units
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '8226': '' # Remove bullet •
+  '9702': '' # Remove White bullet ◦
+  '0182': '' # Remove ¶
+  '0042': '' # Remove *
+  '8260': '0047' # Replace fraction slash with forward slash
+  '699': '8217' # Replace modifier letter commas with right single quotation marks
+  '700': '8217' # Replace modifier letter apostrophes with right single quotation marks
+  '8216': '8217' # Replace left single quotation marks with right single quotation marks
+  '39': '8217' # Replace apostrophes with right single quotation marks
+
+allowed_characters:
+  - '32' # space           
+  - '33' # EXCLAMATION MARK      
+  - '37' # PERCENT SIGN          
+  - '38' # AMPERSAND            
+  - '39' # APOSTROPHE 
+  - '40' # LEFT PARENTHESIS      
+  - '41' # RIGHT PARENTHESIS     
+  - '44' # COMMA                 
+  - '45' # HYPHEN-MINUS          
+  - '46' # FULL STOP             
+  - '47' # SOLIDUS               
+  - '48' # DIGIT ZERO            
+  - '49' # DIGIT ONE             
+  - '50' # DIGIT TWO             
+  - '51' # DIGIT THREE           
+  - '52' # DIGIT FOUR            
+  - '53' # DIGIT FIVE            
+  - '54' # DIGIT SIX             
+  - '55' # DIGIT SEVEN           
+  - '56' # DIGIT EIGHT           
+  - '57' # DIGIT NINE            
+  - '58' # COLON                 
+  - '59' # SEMICOLON             
+  - '63' # QUESTION MARK         
+  - '65' # LATIN CAPITAL LETTER A
+  - '66' # LATIN CAPITAL LETTER B
+  - '67' # LATIN CAPITAL LETTER C
+  - '68' # LATIN CAPITAL LETTER D
+  - '69' # LATIN CAPITAL LETTER E
+  - '70' # LATIN CAPITAL LETTER F
+  - '71' # LATIN CAPITAL LETTER G
+  - '72' # LATIN CAPITAL LETTER H
+  - '73' # LATIN CAPITAL LETTER I
+  - '74' # LATIN CAPITAL LETTER J
+  - '75' # LATIN CAPITAL LETTER K
+  - '76' # LATIN CAPITAL LETTER L
+  - '77' # LATIN CAPITAL LETTER M
+  - '78' # LATIN CAPITAL LETTER N
+  - '79' # LATIN CAPITAL LETTER O
+  - '80' # LATIN CAPITAL LETTER P
+  - '81' # LATIN CAPITAL LETTER Q
+  - '82' # LATIN CAPITAL LETTER R
+  - '83' # LATIN CAPITAL LETTER S
+  - '84' # LATIN CAPITAL LETTER T
+  - '85' # LATIN CAPITAL LETTER U
+  - '86' # LATIN CAPITAL LETTER V
+  - '87' # LATIN CAPITAL LETTER W
+  - '88' # LATIN CAPITAL LETTER X
+  - '89' # LATIN CAPITAL LETTER Y
+  - '90' # LATIN CAPITAL LETTER Z
+  - '91' # LEFT SQUARE BRACKET   
+  - '93' # RIGHT SQUARE BRACKET  
+  - '95' # LOW LINE              
+  - '97' # LATIN SMALL LETTER A  
+  - '98' # LATIN SMALL LETTER B  
+  - '99' # LATIN SMALL LETTER C  
+  - '100' # LATIN SMALL LETTER D  
+  - '101' # LATIN SMALL LETTER E  
+  - '102' # LATIN SMALL LETTER F  
+  - '103' # LATIN SMALL LETTER G  
+  - '104' # LATIN SMALL LETTER H  
+  - '105' # LATIN SMALL LETTER I  
+  - '106' # LATIN SMALL LETTER J  
+  - '107' # LATIN SMALL LETTER K  
+  - '108' # LATIN SMALL LETTER L  
+  - '109' # LATIN SMALL LETTER M  
+  - '110' # LATIN SMALL LETTER N  
+  - '111' # LATIN SMALL LETTER O  
+  - '112' # LATIN SMALL LETTER P  
+  - '113' # LATIN SMALL LETTER Q  
+  - '114' # LATIN SMALL LETTER R  
+  - '115' # LATIN SMALL LETTER S  
+  - '116' # LATIN SMALL LETTER T  
+  - '117' # LATIN SMALL LETTER U  
+  - '118' # LATIN SMALL LETTER V  
+  - '119' # LATIN SMALL LETTER W  
+  - '120' # LATIN SMALL LETTER X  
+  - '121' # LATIN SMALL LETTER Y  
+  - '122' # LATIN SMALL LETTER Z  
+  - '124' # VERTICAL LINE        
+  - '171' # LEFT-POINTING DOUBLE ANGLE QUOTATION MARK                           
+  - '187' # RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
+  - '194' # LATIN CAPITAL LETTER A WITH CIRCUMFLEX
+  - '202' # LATIN CAPITAL LETTER E WITH CIRCUMFLEX
+  - '206' # LATIN CAPITAL LETTER I WITH CIRCUMFLEX
+  - '212' # LATIN CAPITAL LETTER O WITH CIRCUMFLEX
+  - '219' # LATIN CAPITAL LETTER U WITH CIRCUMFLEX
+  - '226' # LATIN SMALL LETTER A WITH CIRCUMFLEX          
+  - '234' # LATIN SMALL LETTER E WITH CIRCUMFLEX
+  - '238' # LATIN SMALL LETTER I WITH CIRCUMFLEX      
+  - '239' # LATIN SMALL LETTER I WITH DIAERESIS       
+  - '244' # LATIN SMALL LETTER O WITH CIRCUMFLEX      
+  - '251' # LATIN SMALL LETTER U WITH CIRCUMFLEX      
+  - '256' # LATIN CAPITAL LETTER A WITH MACRON        
+  - '257' # LATIN SMALL LETTER A WITH MACRON          
+  - '259' # LATIN SMALL LETTER A WITH BREVE           
+  - '274' # LATIN CAPITAL LETTER E WITH MACRON        
+  - '275' # LATIN SMALL LETTER E WITH MACRON
+  - '277' # LATIN SMALL LETTER E WITH BREVE
+  - '298' # LATIN CAPITAL LETTER I WITH MACRON        
+  - '299' # LATIN SMALL LETTER I WITH MACRON
+  - '300' # LATIN CAPITAL LETTER I WITH BREVE
+  - '301' # LATIN SMALL LETTER I WITH BREVE           
+  - '332' # LATIN CAPITAL LETTER O WITH MACRON        
+  - '333' # LATIN SMALL LETTER O WITH MACRON
+  - '335' # LATIN SMALL LETTER O WITH BREVE    
+  - '363' # LATIN SMALL LETTER U WITH MACRON          
+  - '365' # LATIN SMALL LETTER U WITH BREVE
+  - '362' # LATIN CAPITAL LETTER U WITH MACRON
+  - '364' # LATIN CAPITAL LETTER U WITH BREVE
+  - '8211' # EN DASH                                   
+  - '8212' # EM DASH                 
+  - '8216' # LEFT SINGLE QUOTATION MARK                
+  - '8217' # RIGHT SINGLE QUOTATION MARK
+  - '699' # MODIFIER LETTER TURNED COMMA              
+  - '700' # MODIFIER LETTER APOSTROPHE    
+  - '225' # LATIN SMALL LETTER A WITH ACUTE (this is NOT part of standard Tahitian orthogoraphy, but only occurs in foreign names)
+  - '8213' # HORIZONTAL BAR           
+
+  # I need to look more closely at these last four items! Also need to look at the invalid characters
+  # Some of the accented capital latin characters are probably actually fine

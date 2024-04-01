@@ -1,0 +1,38 @@
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '8226': '' # Remove bullet points
+  '0700': '0039' # Replace MODIFIER LETTER APOSTROPHE with APOSTROPHE
+    # See here for more info on this letter: https://en.wikipedia.org/wiki/Modifier_letter_apostrophe 
+    # Looking within the data, and also at Ukrainian BBC, they seem to only 
+    # use the modifier letter apostrophe when required by technology; e.g. domain names
+
+allowed_quotes: "\u0022" # ascii straight quotes
+replacement_quotes: "\u0022" # ascii straight quotes
+allowed_single_quotes: 
+ - "\u0027" # ascii straight single quote
+ - "\u2019" # RIGHT SINGLE QUOTATION MARK
+ - "\u02bc" # MODIFIER LETTER APOSTROPHE
+replacement_single_quotes: "\u0027"  # ascii straight single quote
+
+allowed_characters:
+  - '32' # space
+  - '0033-41' # ! " # $ % & ' ( )
+  - '0044-0059' # , - . / 0-9 : ;
+  - '0063' #-0122' # ? @ A-Z a-z
+  - '124' # |
+  - '700' # modifier letter apostrophe
+  - '1028' # CYRILLIC CAPITAL LETTER UKRAINIAN IE
+  - '1030' # CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I
+  - '1031' # CYRILLIC CAPITAL LETTER YI
+  - '1040-1065' # cyrillic
+  - '1068' # CYRILLIC CAPITAL LETTER SOFT SIGN
+  - '1070-1097' # more cyrillic
+  - '1100' # small soft sign
+  - '1102-1103' # more cyrillic
+  - '1111' # cyrillic
+  - '1108' # small cyrillic ie
+  - '1110-1111' # more cyrillic
+  - '1168-1169' # Valuable website: https://en.wikipedia.org/wiki/Ukrainian_alphabet#Unicode 
+  - '8211' # en dash
+  - '8212' # em dash
+  - '8217' # right single quotation marks

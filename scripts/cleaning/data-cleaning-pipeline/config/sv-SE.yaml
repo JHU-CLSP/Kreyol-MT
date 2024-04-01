@@ -1,0 +1,24 @@
+# Config file for Swedish
+
+allowed_characters:
+- '32-59' # Basic symbols
+- '63-64' # ? and @
+- '65-90' # A-Z
+- '91-93' # [, \, ], 
+- '95' # _
+- '97-122' # a-z
+- '163' # £
+- '196-197' # Ä, Å
+- '0214' # Ö
+- '0228-0229' # ä, å
+- '0246' # ö
+- '8209-8212' # various dashes
+- '8364' # €
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '8226': '' # Remove bullet points
+  '8209': '0045' # Change NON-BREAKING HYPHEN to HYPHEN-MINUS
+  '8210': '0045' # Change FIGURE DASH to HYPHEN-MINUS
+  '8211': '0045' # Change EN DASH to HYPHEN-MINUS
+  '8212': '0045' # Change EM DASH to HYPHEN-MINUS

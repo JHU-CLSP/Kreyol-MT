@@ -1,0 +1,73 @@
+allowed_characters:
+  - '0032-0033' # ' ' !
+  - '0034-0035' # " #
+  - '0039-0041' # ( )
+  - '0045-0047' # - . /
+  - '0058' # :
+  - '0091' # [
+  - '0093' # ]
+  - '1548' # Arabic comma
+  - '1563' # Arabic semicolon
+  - '1567' # Arabic question
+  - '1569-1572' # Hamza, Alef with Madda, Alef with hamza, vav with hamza
+  - '1574' # Yeh with hamza
+  - '1575-1594' # Alef - ghain
+  - '1601-1602' # Feh - Qaf
+  - '1604-1608' # Lam - vav
+  - '1611' # Fathatan
+  - '1614-1617' # Fatha Damma Kasra Shadda
+  - '1620' # Hamza above
+  - '1662' # Peh
+  - '1670' # Cheh
+  - '1688' # Jeh
+  - '1705' # Keh
+  - '1711' # Gah
+  - '1728' # Heh with yeh
+  - '1740' # Farsi yeh
+  - '1776-1785' # Persian 0-9
+  - '8211' # en dash
+  - '8212' # em dash
+
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '0182': '' # Remove ¶
+  '8208': '0045' # Change HYPHEN to HYPHEN-MINUS
+  '8210': '0045' # Change FIGURE DASH to HYPHEN-MINUS
+  '8722': '0045' # Change MINUS SIGN to HYPHEN-MINUS
+  '8260': '0047' # Replace fraction slash with forward slash
+
+  '0059': '1563' # Colon with Arabic colon
+  '0760': '0058' # Raised colon to normal colon
+  '1603': '1705' # Arabic Keh to Persian
+  '0044': '1548' # Latin to Arabic comma
+
+  # Latin Numbers -> Persian Numbers
+  '0048': '1776' # 0
+  '0049': '1777' # 1
+  '0050': '1778' # 2
+  '0051': '1779' # 3
+  '0052': '1780' # 4
+  '0053': '1781' # 5
+  '0054': '1782' # 6
+  '0055': '1783' # 7
+  '0056': '1784' # 8
+  '0057': '1785' # 9
+
+  # Arabic Numbers -> Persian Numbers
+  '1632': '1776' # 0
+  '1633': '1777' # 1
+  '1634': '1778' # 2
+  '1635': '1779' # 3
+  '1636': '1780' # 4
+  '1637': '1781' # 5
+  '1638': '1782' # 6
+  '1639': '1783' # 7
+  '1640': '1784' # 8
+  '1641': '1785' # 9
+
+  '8206': '' # Remove left-to-write
+  '8207': '' # Remove right-to-write
+
+
+use_edit_distance: true

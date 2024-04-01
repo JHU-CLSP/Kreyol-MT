@@ -1,0 +1,4 @@
+# config file for South Sotho
+use_edit_distance: True
+
+min_num_words: 2 # agglutinative language

@@ -1,0 +1,13 @@
+# config file for Nepali
+use_edit_distance: True
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '8226': '' # Remove bullet •
+  '9702': '' # Remove White bullet ◦
+  '0182': '' # Remove ¶
+  '0042': '' # Remove *
+  '0180': '0039' # replace ´ with '
+  '8260': '0047' # Replace fraction slash with forward slash
+  '0169': '' # Remove ©
+  '9633': '45' # Replace white squares (which are used as bullet points) with hyphen-minus

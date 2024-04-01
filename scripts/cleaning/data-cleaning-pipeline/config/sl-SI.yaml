@@ -1,0 +1,7 @@
+# Config file for Slovenian
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '8226': '' # Remove bullet points
+  '9633': '' # Remove WHITE SQUARE
+  '8206': '' # Remove LEFT-TO-RIGHT MARK

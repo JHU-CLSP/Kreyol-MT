@@ -1,0 +1,31 @@
+allowed_characters:
+  - '0032' # ' '
+  - '0033-0034' # ! "
+  - '0038-0041' # & ' ( )
+  - '0044-0059' # , - . / 0-9 : ;
+  - '0091' # [
+  - '0093' # ]
+  - '0769' # accent mark
+  - '0902' # Alpha with tonos
+  - '0904-0906' # Epsilon - Iota with tonos
+  - '0908' # Omicron with tonos
+  - '0910-0911' # Upsilon and Omega with tonos
+  - '0912' # Iona with dialytika and tonos
+  - '0913-0929' # Alpha - Rho
+  - '0931-0937' # Sigma - Omega
+  - '0938-0939' # special upper
+  - '0940-0944' # special lower
+  - '0945-0969' # alpha - omega
+  - '0970-0974' # more special lower
+  - '8211' # en dash
+  - '8212' # em dash
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '0182': '' # Remove ¶
+  '8208': '0045' # Change HYPHEN to HYPHEN-MINUS
+  '8210': '0045' # Change FIGURE DASH to HYPHEN-MINUS
+  '8722': '0045' # Change MINUS SIGN to HYPHEN-MINUS
+  '8260': '0047' # Replace fraction slash with forward slash
+
+use_edit_distance: true

@@ -1,0 +1,26 @@
+allowed_characters:
+  - '0032' # ' '
+  - '0033-0035' # ! " #
+  - '0037-0041' # % & ' ( )
+  - '0044-0059' # , - . / 0-9 : ;
+  - '0063' # ?
+  - '0091' # [
+  - '0093' # ]
+  - '0065-0090' # A-Z
+  - '0097-0122' # a-z
+  - '8211' # en dash
+  - '8212' # em dash
+  - '0196' # Ä
+  - '0228' # ä
+  - '0214' # Ö
+  - '0246' # ö
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '0182': '' # Remove ¶
+  '8208': '0045' # Change HYPHEN to HYPHEN-MINUS
+  '8210': '0045' # Change FIGURE DASH to HYPHEN-MINUS
+  '8722': '0045' # Change MINUS SIGN to HYPHEN-MINUS
+  '8260': '0047' # Replace fraction slash with forward slash
+
+use_edit_distance: true

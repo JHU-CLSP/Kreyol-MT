@@ -1,0 +1,44 @@
+normalize_quotes: False
+
+allowed_characters:
+  - '0032-0033' # ' ' !
+  - '0035-0041' # # $ % & ' ( )
+  - '0044-0062' # , - . / 0-9 : ; < = >
+  - '0063-0122' # ? @ A-Z [ ] _ a-z
+  - '0123-0126' # { | } ~ I'm keeping these in so that we can see more accurate numbers of what's removed at each step.
+  - '0171' # «
+  - '0176' # °
+  - '0187' # »
+  - '0192-0255' # Latin-1 Supplement
+  - '0338-0339' # Œ œ
+  - '8211' # –
+  - '8212' # —
+  - '8216-8217' # ‘ and ’ I'm letting these through to be normalized in a later step.
+
+normalize_regex_patterns:
+  '\\!': '!'
+  '\\:': ':'
+  '\\n': ' '
+  '\\t': ' '
+  # '(?<=[^\s–\-—\/\-,:#$%]\b)(?<!\d\.)(\d+)$': '' # Remove footnotes
+  '^! ': '' # Remove ! with a space at the beginning of a segment
+  '^!': '' # Remove any ! at the beginning of a segment
+  '^\. ': '' # Remove any full stop at the beginning of a segment if there is a space after
+  '^#+': '' # Remove one or more # at the beginning of a segment
+  '^- #+': '' # Remove - ## or - ### at the beginning of a segment
+  '^–+': '' # Remove one or more – at the beginning of a sentence
+  '^—+': '' # Remove one or more — at the beginning of a sentences
+  '^-+': '' # Remove one or more - at the beginning of a sentence
+  '__+': '_' #Turn contiguous underline characters into a single underline.
+  # Need two of these because the positive lookbehinds are fixed-width.
+  '(?<=^\d)\.(?=[a-zA-Z])': '. ' # Convert a bullet number with no space to one with a space (ex: 14.hello -> 14. hello)
+  '(?<=^\d\d)\.(?=[a-zA-Z])': '. ' # Convert a bullet number with no space to one with a space (ex: 14.hello -> 14. hello)
+  '^\d+–\d+, ': '' # Remove starting verse ranges (eg. 7–8, He is in the midst of His Saints, who will soon see Him; -> He is in the midst of His Saints, who will soon see Him;)
+  '^_ ': '' # Remove a leading underscore and space if it occurs.
+  '^\d+(?=[A-Za-z])': '' # Remove the verse number when it occurs
+  '(?<=^)_(?=\w)|(?<= )_(?=\w)|(?<=\w)_(?=$)|(?<=\w)_(?= )': '' # Remove any beginning or ending _ directly next to a word (i.e. _this_ or _this or this_)
+  '&#?39;?': "'"
+  '&#?8217;?': "'"
+  "’|‘": "'" # These were normalized in the europarl corpus
+
+  

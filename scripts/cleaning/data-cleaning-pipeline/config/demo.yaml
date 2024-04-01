@@ -1,0 +1,17 @@
+# Demo config file for a specific language
+
+allowed_spaces:
+  - "\u0020" # ascii space
+
+replacement_space: "\u0020" # ascii space
+
+character_frequency_cutoff: 0.0005
+block_frequency_cutoff: 0.1
+
+normalize_characters:
+  '0020': '003A' # replace space with colon
+
+allowed_characters:
+  - '0020-0100' # define ranges of allowed characters
+  - '3005' # a specific characters outside a range
+  

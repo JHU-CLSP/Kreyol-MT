@@ -1,0 +1,23 @@
+# config file for Serbian (Cyrillic)
+
+allowed_characters:
+  - '32' # space
+  - '33-35' # ! " #
+  - '37-41' # 
+  - '44-59' # , - . / 0-9 : ;
+  - '63' # question mark
+  - '91' # [
+  - '93' # ]
+  - '95' # _
+  - '124' # |
+  - '1026' # CYRILLIC CAPITAL LETTER DJE
+  - '1032-1035' # Serbian cyrillic
+  - '1039-1048' # more cyrillic
+  - '1050-1064' # more cyrillic
+  - '1072-1080' # cyrillic
+  - '1082-1096' # cyrillic
+  - '1106' # CYRILLIC SMALL LETTER DJE
+  - '1112-1115' # cyrillic
+  - '1119' # CYRILLIC SMALL LETTER DZHE
+  - '8211' # en dash
+  - '8212' # em dash

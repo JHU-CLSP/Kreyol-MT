@@ -1,0 +1,19 @@
+use_edit_distance: True
+
+# Must be provided if use_edit_distance is True
+min_valid_edit_dist_raw: 20
+min_valid_edit_dist_ratio: .1 
+
+normalize_quotes: False
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '8226': '' # Remove bullet •
+  '9702': '' # Remove White bullet ◦
+  '0182': '' # Remove ¶
+  '0042': '' # Remove *
+  '0180': '0039' # replace ´ with '
+  '8260': '0047' # Replace fraction slash with forward slash
+  '0169': '' # Remove ©
+  '8220': '0034' # Replace “ with "
+  '8221': '0034' # Replace ” with "

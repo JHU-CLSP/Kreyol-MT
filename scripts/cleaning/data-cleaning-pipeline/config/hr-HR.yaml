@@ -1,0 +1,8 @@
+allowed_characters:
+  - '0032' # ' '
+  - '0033-41' # ! " # $ % & ' ( )
+  - '0044-0062' # , - . / 0-9 : ; < = >
+  - '0063-0122' # ? @ A-Z a-z
+  - '128-591' # Latin-1 Supplement, Latin Extended-A, Latin Extended-B
+  - '8211' # –
+  - '8212' # —

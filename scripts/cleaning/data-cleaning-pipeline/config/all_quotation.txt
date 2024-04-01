@@ -1,0 +1,17 @@
+0022 # straight quote ["]
+02EE # Modifier Letter Double Apostrophe
+201C # upper left curly quote upside down facing right[“]
+201D # upper right curly quote facing left [”]
+201E # lower left curly quote facing left [„]
+201F # upper left curly quote facing right [‟]
+300A # left double angle brackets [《]
+300B # right double angle brackets [》]
+300E # upper left double bracket quote [『]
+300F # lower right double bracket quote [』]
+301D # upper left straight long quotes [〝]
+301E # upper right straight long quotes [〞]
+00AB # left pointing double angle quote [«]
+00BB # right pointing double angle quote [»]
+275D # left heavy quotation [❝]
+275E # right heavy quotation [❞] 
+02BA # ʺ DOUBLE PRIME

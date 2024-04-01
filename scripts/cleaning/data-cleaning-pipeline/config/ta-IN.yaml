@@ -1,0 +1,3 @@
+# Config file for Tamil
+use_edit_distance: True
+min_valid_edit_dist_raw: 30

@@ -1,0 +1,46 @@
+# config file for Tongan
+
+normalize_quotes: False
+
+use_edit_distance: True
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '8226': '' # Remove bullet •
+  '9702': '' # Remove White bullet ◦
+  '0182': '' # Remove ¶
+  '0042': '' # Remove *
+  # '0180': '39' # replace ´ with '
+  '8260': '47' # Replace fraction slash with forward slash
+  '0169': '' # Remove ©
+  '8220': '34' # Replace left double quotation mark with straight double quotation mark
+  '8221': '34' # Replace right double quotation mark with straight double quotation mark
+
+
+# THE ORDER OF THESE MATTERS
+normalize_regex_patterns:
+  '\\!': '!'
+  '\\:': ':'
+  '\\n': ' '
+  '\\t': ' '
+  # '(?<=[^\s–\-—\/\-,:#$%]\b)(?<!\d\.)(\d+)$': '' # Remove footnotes
+  '^! ': '' # Remove ! with a space at the beginning of a segment
+  '^!': '' # Remove any ! at the beginning of a segment
+  '^\. ': '' # Remove any full stop at the beginning of a segment if there is a space after
+  '^#+': '' # Remove one or more # at the beginning of a segment
+  '^- #+': '' # Remove - ## or - ### at the beginning of a segment
+  '^–+': '' # Remove one or more – at the beginning of a sentence
+  '^—+': '' # Remove one or more — at the beginning of a sentences
+  '^-+': '' # Remove one or more - at the beginning of a sentence
+  '__+': '_' #Turn contiguous underline characters into a single underline.
+  # Need two of these because the positive lookbehinds are fixed-width.
+  '(?<=^\d)\.(?=[a-zA-Z])': '. ' # Convert a bullet number with no space to one with a space (ex: 14.hello -> 14. hello)
+  '(?<=^\d\d)\.(?=[a-zA-Z])': '. ' # Convert a bullet number with no space to one with a space (ex: 14.hello -> 14. hello)
+  '^\d+–\d+, ': '' # Remove starting verse ranges (eg. 7–8, He is in the midst of His Saints, who will soon see Him; -> He is in the midst of His Saints, who will soon see Him;)
+  '^_ ': '' # Remove a leading underscore and space if it occurs.
+  '^\d+(?=[A-Za-z])': '' # Remove the verse number when it occurs
+  '(?<=^)_(?=\w)|(?<= )_(?=\w)|(?<=\w)_(?=$)|(?<=\w)_(?= )': '' # Remove any beginning or ending _ directly next to a word (i.e. _this_ or _this or this_)
+  '’(?=[aeiouAEIOUĀāĒēĪīŌōŪūÁÉÍÓÚáéíóú])': 'ʻ' # Replace right single quotation marks, which are followed by vowels, with modifier letter commas
+  '‘(?!.*’)': 'ʻ' # Replace left single quotation marks that don't have a corresponding right quotation mark later on with modifier letter commas
+  '‘|’': "'" # Finally, replace left or right single quotation marks with straight single quotation marks
+  

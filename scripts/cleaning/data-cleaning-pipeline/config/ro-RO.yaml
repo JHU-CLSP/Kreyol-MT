@@ -1,0 +1,13 @@
+# Config file for Romanian
+
+# Needed to lower this cutoff for the Â character, since â rarely (or perhaps
+# never) occurs at the beginning of words, and thus isn't usually capitalized
+character_frequency_cutoff: 0.0001 
+block_frequency_cutoff: 0.1
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '8226': '' # Remove bullet points
+  '8206': '' # Remove left-to-right control character
+  '8208': '0045' # Replace HYPHEN with HYPHEN-MINUS
+  '9675': '' # Remove white circle bullets

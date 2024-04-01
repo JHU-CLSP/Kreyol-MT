@@ -1,0 +1,11 @@
+word_initial_delimiter: "(?:(?<=[\u1000-\u109F\u200B ])|(?<=^))"
+word_final_delimiter: "(?:(?=[\u1000-\u109F\u200B ])|(?=$))"
+
+allowed_spaces:
+  - "\u0020" # ascii space
+  - "\u200B" # Zero-width space
+
+replacement_space: "\u200B" # Zero width space
+
+remove_long_words: False
+normalize_quotes: False

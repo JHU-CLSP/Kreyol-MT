@@ -1,0 +1,17 @@
+# config file for Yapese
+
+normalize_quotes: False
+use_edit_distance: True
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '8226': '' # Remove bullet •
+  '9702': '' # Remove White bullet ◦
+  '0182': '' # Remove ¶
+  '0042': '' # Remove *
+  '0180': '0039' # replace ´ with '
+  '8260': '0047' # Replace fraction slash with forward slash
+  '0169': '' # Remove ©
+  '8220': '34' # Replace left double quotation mark with straight double quote
+  '8221': '34' # Replace right double quotation mark with straight double quote
+  

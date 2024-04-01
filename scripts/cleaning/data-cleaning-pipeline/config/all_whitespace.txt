@@ -1,0 +1,49 @@
+0009 # tab
+000A # line feed
+000B # line tab
+000C # form feed
+000D # carriage return
+001C # file seperator
+001D # group seperator
+001E # record seperator
+001F # unit seperator
+0020 # space
+0085 # next line
+00A0 # no-break space
+1680 # ogham space mark
+180E # mongolian vowel seperator
+2000 # en quad
+2001 # em quad
+2002 # en space
+2003 # em space
+2004 # three-per-em space
+2005 # four-per-em space
+2006 # six-per-em space
+2007 # figure space
+2008 # punctuation space
+2009 # thin space
+200A # hair space
+200B # zero width space
+200C # zero width zon-joiner
+200D # zero width joiner
+2028 # line seperator
+2029 # paragraph seperator
+202F # narrow no-break space
+205F # medium mathematical space
+2060 # word joiner
+3000 # ideographic space
+FEFF # zero width non-breaking space
+00B7 # &middot;
+21A1 # symbol for form feed
+237D # Used to indicate a NBSP
+23CE # Symbol for a return key, which enters a line break
+2409 # Substitutes for a tab character
+240A # Substitutes for a line feed
+240B # Substitutes for a vertical tab (line tab)
+240C # Substitutes for a form feed (page break)
+240D # Substitutes for a carriage return
+2420 # Substitutes for an ASCII space
+2422 # symbol for the word separator
+2423 # &blank;
+2424 # Substitutes for a line break
+3037 # Graphic used for code 9999 in Chinese telegraph code, representing a line feed

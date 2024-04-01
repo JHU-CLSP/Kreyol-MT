@@ -1,0 +1,35 @@
+allowed_characters:
+  - '0032' # ' '
+  - '0033-0035' # ! " #
+  - '0037-0041' # % & ' ( )
+  - '0044-0059' # , - . / 0-9 : ;
+  - '0063' # ?
+  - '0091' # [
+  - '0093' # ]
+  - '0065-0080' # A-P
+  - '0082-0086' # R-V
+  - '0089-0090' # Y-Z
+  - '0097-0112' # a-p
+  - '0114-0118' # r-v
+  - '0121-0122' # y-z
+  - '0199' # Ç
+  - '0214' # Ö
+  - '0220' # Ü
+  - '0231' # ç
+  - '0246' # ö
+  - '0252' # ü
+  - '0286-0287' # Ğ ğ
+  - '0304-0305' # İ ı
+  - '0350-0351' # Ş ş
+  - '8211' # en dash
+  - '8212' # em dash
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '0182': '' # Remove ¶
+  '8208': '0045' # Change HYPHEN to HYPHEN-MINUS
+  '8210': '0045' # Change FIGURE DASH to HYPHEN-MINUS
+  '8722': '0045' # Change MINUS SIGN to HYPHEN-MINUS
+  '8260': '0047' # Replace fraction slash with forward slash
+
+use_edit_distance: true

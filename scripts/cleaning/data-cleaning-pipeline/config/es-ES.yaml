@@ -1,0 +1,37 @@
+allowed_characters:
+  - '0032' # ' '
+  - '0033-41' # ! " # $ % & ' ( )
+  - '0044-0062' # , - . / 0-9 : ; < = >
+  - '0063-0122' # ? @ A-Z a-z
+  - '0161' # ¡
+  - '0191' # ¿
+  - '0193' # Á
+  - '0200' # È
+  - '0201' # É
+  - '0209' # Ñ
+  - '0210' # Ò
+  - '0211' # Ó
+  - '0218' # Ú
+  - '0225' # á
+  - '0227' # ã (at least in foreign words)
+  - '0228' # ä (at least in foreign words)
+  - '0232' # è
+  - '0233' # é
+  - '0237' # í
+  - '0241-0243' # ñ ò ó
+  - '0245' # õ ?
+  - '0246' # ö ?
+  - '0248' # ø (at least in foreign words)
+  - '0249' # ù
+  - '0250' # ú
+  - '0252' # ü
+  - '8211' # –
+  - '8212' # —
+
+word_delimiter: ' '
+
+use_edit_distance: True
+
+# Must be provided if use_edit_distance is True
+min_valid_edit_dist_raw: 20
+min_valid_edit_dist_ratio: .1 

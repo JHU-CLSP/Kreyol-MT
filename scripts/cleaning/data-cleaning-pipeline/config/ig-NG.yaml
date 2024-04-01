@@ -1,0 +1,54 @@
+allowed_characters:
+  - '0032' # ' '
+  - '0033-0034' # ! "
+  - '0039-0041' # ' ( )
+  - '0044-0046' # , - .
+  - '0048-0059' # 0-9 : ;
+  - '0063' # ?
+  - '0065-0080' # A-P
+  - '0082-0087' # R-W
+  - '0089-0090' # Y-Z
+  - '0097-0112' # a-p
+  - '0114-0119' # r-w
+  - '0121-0122' # y-z
+
+  - '7748' # N dot above
+  - '7749' # n dot above
+  - '7882' # I dot below
+  - '7883' # i dot below
+  - '7884' # O dot below
+  - '7885' # o dot below
+  - '7908' # U dot below
+  - '7909' # u dot below
+
+  # Tone markings
+  - '0768' # combining grave accent
+  - '0769' # combining acute accent
+  - '0772' # combining macron
+  - '0224' # a with grave
+  - '0225' # a with acute
+  - '0232' # e with grave
+  - '0233' # e with acute
+  - '0236' # i with grave
+  - '0237' # i with acute
+  - '0242' # o with grave
+  - '0243' # o with acute
+  - '0249' # u with grave
+  - '0250' # u with acute
+
+  - '0091' # [
+  - '0093' # ]
+  - '8211' # en dash
+  - '8212' # em dash
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '0182': '' # Remove ¶
+  '8208': '0045' # Change HYPHEN to HYPHEN-MINUS
+  '8210': '0045' # Change FIGURE DASH to HYPHEN-MINUS
+  '8722': '0045' # Change MINUS SIGN to HYPHEN-MINUS
+  '8260': '0047' # Replace fraction slash with forward slash
+
+  '0324': '7749' # accented n with dotted n
+
+use_edit_distance: true

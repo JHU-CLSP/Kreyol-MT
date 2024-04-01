@@ -1,0 +1,11 @@
+# Config file for Polish
+
+# Needed to lower this cutoff for the Ó character
+character_frequency_cutoff: 0.0001 
+block_frequency_cutoff: 0.1
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '8226': '' # Remove bullet points
+  '8208': '0045' # Replace HYPHEN with HYPHEN-MINUS
+  '8722': '0045' # Replace MINUS SIGN sign with HYPHEN-MINUS

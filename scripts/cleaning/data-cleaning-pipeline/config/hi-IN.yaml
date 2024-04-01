@@ -1,0 +1,35 @@
+allowed_characters:
+  - '0032' # ' '
+  - '0033-0034' # ! "
+  - '0039-0041' # ' ( )
+  - '0044-0059' # , - . / 0-9 : ;
+  - '0063' # ?
+  - '0091' # [
+  - '0093' # ]
+  - '2305-2307' # Signs
+  - '2308'
+  - '2309-2315' # Devanagari
+  - '2317' 
+  - '2319-2321'
+  - '2323-2328'
+  - '2330-2354'
+  - '2355'
+  - '2357-2361'
+  - '2364'
+  - '2366-2371'
+  - '2373'
+  - '2375-2377'
+  - '2379-2381' # vowels signs
+  - '2404' # danda
+  - '8211' # en dash
+  - '8212' # em dash
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '0182': '' # Remove ¶
+  '8208': '0045' # Change HYPHEN to HYPHEN-MINUS
+  '8210': '0045' # Change FIGURE DASH to HYPHEN-MINUS
+  '8722': '0045' # Change MINUS SIGN to HYPHEN-MINUS
+  '8260': '0047' # Replace fraction slash with forward slash
+
+use_edit_distance: true

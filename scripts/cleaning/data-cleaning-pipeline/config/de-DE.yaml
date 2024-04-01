@@ -1,0 +1,31 @@
+# German!
+
+# Quotes
+normalize_quotes: False
+# allowed_quotes:  # I got this info from https://coerll.utexas.edu/gg/gr/mis_01.html
+#   - "\u0022" # ascii straight quotes
+#   - "\u201E" # Double low quotation mark for beginning of german quotes.
+#   - "\u201C" # Left Double Quotation mark for the other side of German quotes
+#   - "\u00AB" # « These are traditionally used in books
+#   - "\u00BB" # » These are traditionally used in books
+# replacement_quotes: "\u0022" # ascii straight quotes
+# allowed_single_quotes: "\u0027" # ascii straight single quote, in german they use a comma for the left single quote, so this should be fine.
+# replacement_single_quotes: "\u0027"  # ascii straight single quote
+
+use_edit_distance: True
+
+# Must be provided if use_edit_distance is True
+min_valid_edit_dist_raw: 20
+min_valid_edit_dist_ratio: .1 
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '8226': '' # Remove bullet •
+  '9702': '' # Remove White bullet ◦
+  '0182': '' # Remove ¶
+  '0042': '' # Remove *
+  '0180': '0039' # replace ´ with '
+  '8260': '0047' # Replace fraction slash with forward slash
+  '0169': '' # Remove ©
+  '8220': '0034' # Replace “ with "
+  '8221': '0034' # Replace ” with "

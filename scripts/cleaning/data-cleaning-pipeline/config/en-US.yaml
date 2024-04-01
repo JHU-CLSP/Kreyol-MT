@@ -1,0 +1,22 @@
+# Config file for English
+
+allowed_characters:
+  - '0032-0041' # ' ' ! " # $ % & ' ( )
+  - '0044-0062' # , - . / 0-9 : ; < = >
+  - '0063-0122' # ? @ A-Z [ ] _ a-z
+  - '0123-0126' # { | } ~ I'm keeping these in so that we can see more accurate numbers of what's removed at each step.
+  - '0176' # °
+  - '0192-0255' # Latin-1 Supplement
+  - '8211' # –
+  - '8212' # —
+  - '8216-8217' # ‘ and ’ I'm letting these through to be normalized in a later step.
+  - '8242' # ′ 
+
+normalize_characters:
+  '8230': '' # Remove ellipsis
+  '8224': '' # Remove †
+  '8226': '' # Remove bullet points
+  '8208': '0045' # Replace HYPHEN with HYPHEN-MINUS
+  '8722': '0045' # Replace MINUS SIGN with HYPHEN-MINUS
+  '8213': '0045' # Replace HORIZONTAL BAR with HYPHEN-MINUS
+
