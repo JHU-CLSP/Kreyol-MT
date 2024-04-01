@@ -1,4 +1,4 @@
-# Kreyol-MT data info
+# Kreyòl-MT data info
 
 ## File structure:
 
