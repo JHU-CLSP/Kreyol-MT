@@ -1,6 +1,6 @@
 # Kreyòl-MT
 
-⚠️ Paper link coming soon!
+Paper [here](https://arxiv.org/abs/2405.05376)
 
 ⚠️ Data download link(s) coming soon! (HF and LDC)
 
@@ -60,4 +60,17 @@ Goal: include data for each of the following languages
 ---
 
 **_Using ISO 639-3 codes_**
+
+## Citation
+
+Please cite:
+
+```
+@article{robinson2024krey,
+  title={Krey$\backslash$ol-MT: Building MT for Latin American, Caribbean and Colonial African Creole Languages},
+  author={Robinson, Nathaniel R and Dabre, Raj and Shurtz, Ammon and Dent, Rasul and Onesi, Onenamiyi and Monroc, Claire Bizon and Grobol, Lo{\"\i}c and Muhammad, Hasan and Garg, Ashi and Etori, Naome A and others},
+  journal={arXiv preprint arXiv:2405.05376},
+  year={2024}
+}
+```
 
