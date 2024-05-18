@@ -1,6 +1,6 @@
 # Kreyòl-MT
 
-Paper [here](https://arxiv.org/abs/2405.05376)
+📄 Paper [here](https://arxiv.org/abs/2405.05376)
 
 ⚠️ Data download link(s) coming soon! (HF and LDC)
 
