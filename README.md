@@ -10,7 +10,11 @@
 
 ## Model downloads
 
-⚠️ Model download link(s) coming soon! (HF)
+🤗 Download our models on HuggingFace:
+- Our [flagship model](https://huggingface.co/jhu-clsp/kreyol-mt) (mBART fine-tuned on all data)
+- [mBART fine-tuned on public data](https://huggingface.co/jhu-clsp/kreyol-mt-pubtrain/settings)
+- [Model trained from scratch on all data](https://huggingface.co/jhu-clsp/kreyol-mt-scratch)
+- [Model trained from scratch on public data](https://huggingface.co/jhu-clsp/kreyol-mt-scratch-pubtrain)
 
 ## Building Machine Translation for Latin American, Caribbean, and Colonial African Creole Languages
 
