@@ -6,21 +6,15 @@ Though data will not be hosted here. Link coming soon!
 
 ```
 |-- README.md
-|-- LICENSE
 |-- lang1
 |   |-- bitexts
 |   |   |-- lang1--langx
-|   |   |   |-- train.lang1
-|   |   |   |-- train.langx
-|   |   |   |-- test.lang1
-|   |   |   |-- test.langx
-|   |   |   |-- ...
 |   |   |   |-- raw
 |   |   |   |   |-- datasource1
-|   |   |   |   |   |-- train.lang1
-|   |   |   |   |   |-- train.langx
+|   |   |   |   |   |-- README.md
 |   |   |   |   |   |-- ...
 |   |   |   |   |-- datasource2
+|   |   |   |   |   |-- README.md
 |   |   |   |   |   |-- ...
 |   |   |   |   |-- ...
 |   |   |-- lang1--langy
@@ -31,9 +25,11 @@ Though data will not be hosted here. Link coming soon!
 |   |-- mono
 |   |   |-- raw
 |   |   |   |-- datasource1
-|   |   |   |   |-- train.lang1
+|   |   |   |   |-- README.md
+|   |   |   |   |-- ...
 |   |   |   |-- datasource2
-|   |   |   |   |-- train.lang1
+|   |   |   |   |-- README.md
+|   |   |   |   |-- ...
 |   |   |   |-- ...
 |   |-- README.md
 |-- lang2
