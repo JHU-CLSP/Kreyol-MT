@@ -74,3 +74,6 @@ Please cite:
 }
 ```
 
+![world_map](./world_map.png)
+![latin america map](./la_map.png)
+
