@@ -57,6 +57,19 @@ Goal: include data for each of the following languages
 *Other Creole languages* 🌏
  - Tok Pisin (`tpi`)
 
+*...with target languages* 🎯
+- English (`eng`)
+- French (`fra`)
+- Arabic (`ara`)
+- Azerbaijani (`aze`)
+- Cebuano (`ceb`)
+- German (`deu`)
+- Haitian (`hat`)
+- Nepali (`nep`)
+- Portuguese (`por`)
+- Spanish (`spa`)
+- Chinese (`zho`)
+
 ---
 
 **_Using ISO 639-3 codes_**
