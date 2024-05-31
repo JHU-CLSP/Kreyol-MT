@@ -1,8 +1,14 @@
 # Kreyòl-MT
 
-📄 Paper: ["Kreyòl-MT: Building Machine Translation for Latin American, Caribbean, and Colonial African Creole Languages"](https://arxiv.org/abs/2405.05376)
+📄 Paper: ["Kreyòl-MT: Building Machine Translation for Latin American, Caribbean, and Colonial African Creole Languages"](https://arxiv.org/abs/2405.05376) 
 
-⚠️ Data download link(s) coming soon! (HF and LDC)
+## Data download
+
+🤗 Data available [on HuggingFace](https://huggingface.co/datasets/jhu-clsp/kreyol-mt)
+
+⚠️ Additional data coming soon on LDC!
+
+## Model downloads
 
 ⚠️ Model download link(s) coming soon! (HF)
 
