@@ -1,6 +1,6 @@
 # Kreyòl-MT
 
-📄 Paper [here](https://arxiv.org/abs/2405.05376)
+📄 Paper: ["Kreyòl-MT: Building Machine Translation for Latin American, Caribbean, and Colonial African Creole Languages"](https://arxiv.org/abs/2405.05376)
 
 ⚠️ Data download link(s) coming soon! (HF and LDC)
 
