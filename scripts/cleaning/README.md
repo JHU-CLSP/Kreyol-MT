@@ -4,7 +4,7 @@ Cleaning the data:
 
 1.  Use the `gen_datasets.py` script to generate the combined train, dev, and test files per language pair.
 2.  Make sure you're in this directory (`CreoleMTData/scripts/cleaning/`)
-3.  Run clean_all.py:
+3.  Run `clean_all.py`:
 
 ```
 python clean_all.py data_output_path/ cleaning_info_out_path/ --clean_train True
