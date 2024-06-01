@@ -96,7 +96,8 @@ Please cite:
   year={2024}
 }
 ```
-
+![all results](./ours-all.png)
+![pubic results](./ours-public.png)
 ![world_map](./world_map.png)
 ![latin america map](./la_map.png)
 
